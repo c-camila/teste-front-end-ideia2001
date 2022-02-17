@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Front End Ideia 2001</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="nav-logo" src="imgs/logo.png" alt="logo da Ideia2001">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><strong>Eventos</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><strong>Usuários</strong></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><strong>Relatórios</strong></a>
+        </li>
+      </ul>
+      <nav class="nav-menu">
+        <img class="nav-menu-logo" src="imgs/user.png" alt="logo de usuário">
+        <a class="nav-menu-name"><strong>Igor Gonçalves</strong></a>
+        <a class="nav-menu-status">Desconectar</a>
+      </nav>
+
+      <!-- menu hamburguer -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
+
+  <section>
+    <div class="card-orange"></div>
+    <div class="card">
+      <p class="text-intro">Olá <strong>Igor Gonçalves</strong>,
+        selecione uma das
+        opções abaixo:</p>
+      <button class="content-menu-button">
+        <img class="content-menu-image" src="imgs/icone-eventos.png"
+          alt="Ícone de Eventos">
+        <h1 class="bg-text-button">Meus Eventos</h1>
+      </button>
+      <button class="content-menu-button">
+        <img class="content-menu-image" src="imgs/icone-usuarios.png"
+          alt="Ícone de Usuários">
+        <h1 class="bg-text-button">Usuários</h1>
+      </button>
+      <button class="content-menu-button">
+        <img class="content-menu-image" src="imgs/icone-relatorios.png"
+          alt="Ícone de Relatórios">
+        <h1 class="bg-text-button">Relatórios</h1>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <a class="copyright">Idea 2001</a><strong>© Copyright 2019 - Todos os
+      direitos reservados</strong>
+  </footer>
+
+  <!--Modal Eventos-->
+  <div id="modalEvent" class="modal-container">
+    <div class="modal">
+      <button class="btn-close">x</button>
+      <h2 class="text-modal">Meus Eventos</h2>
+      <ul>
+        <li class="text-event">
+          <strong>11h00</strong> - Reunião Operacional</a>
+        </li>
+        <li class="text-event">
+          <strong>14h40</strong> - Revisar Pedidos</a>
+        </li>
+        <li class="text-event">
+          <strong>16h00</strong> - Liberar Pedidos</a>
+        </li>
+      </ul>
+      <form>
+        <input type="text" class="form-input">
+        <input type="button" class="form-button" value="Enviar">
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
